@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-onyx: #0a1f16;
+  --color-brand-forest: #0f3b2c;
+  --color-brand-emerald: #164e37;
+  --color-brand-jade: #247a54;
+  --color-brand-light-green: #38a374;
+  --color-brand-sage: #e1efe6;
+  --color-brand-sage-light: #f0f7f2;
+  
+  --color-brand-gold-dark: #b8933b;
+  --color-brand-gold: #c9a44e;
+  --color-brand-gold-pure: #d4af37;
+  --color-brand-gold-light: #fdf5df;
+  
+  --color-brand-canvas: #faf8f5;
+  --color-brand-sand: #f2ece1;
+  --color-brand-card: #ffffff;
+  --color-brand-border: #e3dcd0;
+  
+  --color-brand-charcoal: #141f19;
+  --color-brand-text: #28372f;
+  --color-brand-muted: #5e7065;
+
+  --font-serif: 'Cormorant Garamond', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: auto !important;
+    background-color: var(--color-brand-canvas);
+    color: var(--color-brand-charcoal);
+    font-family: var(--font-sans);
+  }
+  body {
+    background-color: var(--color-brand-canvas);
+    color: var(--color-brand-charcoal);
+    font-family: var(--font-sans);
+    overflow-x: hidden;
+  }
+}
+
+/* Lenis Smooth Scrolling */
+html.lenis, html.lenis body {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f2ece1;
+}
+::-webkit-scrollbar-thumb {
+  background: #164e37;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #0f3b2c;
+}
+
+/* High-Contrast Impact NGO Utilities */
+.impact-card {
+  background-color: #ffffff;
+  border-radius: 1.5rem;
+  border: 1.5px solid var(--color-brand-border);
+  box-shadow: 0 4px 20px -4px rgba(15, 59, 44, 0.06);
+  transition: all 0.25s ease;
+}
+.impact-card:hover {
+  border-color: var(--color-brand-jade);
+  box-shadow: 0 12px 32px -6px rgba(15, 59, 44, 0.12);
+  transform: translateY(-2px);
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #d4af37 0%, #b8933b 50%, #d4af37 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
