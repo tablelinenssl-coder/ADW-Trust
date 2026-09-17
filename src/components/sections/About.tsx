@@ -43,7 +43,7 @@ export const About: React.FC = () => {
             </div>
             <div className="text-right">
               <span className="text-[10px] uppercase tracking-wider font-bold text-brand-forest bg-brand-sage px-2.5 py-1 rounded-full">
-                Sri Lankan &bull; German Citizen
+                Personal Leadership
               </span>
             </div>
           </div>
@@ -61,7 +61,7 @@ export const About: React.FC = () => {
           </div>
 
           <p className="text-sm sm:text-base text-brand-text leading-relaxed font-light">
-            ADW Trust was founded by <strong>Madam Doreen Wissmann</strong>, who is of Sri Lankan origin and a German citizen. In memory of her husband <strong>Wissmann</strong> and her daughter <strong>Astrid Dymond</strong>, she decided to dedicate her life to supporting underprivileged people across Sri Lanka and is on a mission to change this narrative through direct, compassionate action.
+            ADW Trust was founded by <strong>Madam Doreen Wissmann</strong>. In memory of her husband <strong>Wissmann</strong> and her daughter <strong>Astrid Dymond</strong>, she decided to dedicate her life to supporting underprivileged people across Sri Lanka and is on a mission to change this narrative through direct, compassionate action.
           </p>
 
           {/* Memorial Tribute Box */}
