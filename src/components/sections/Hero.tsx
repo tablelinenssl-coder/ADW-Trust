@@ -77,10 +77,15 @@ export const Hero: React.FC = () => {
           
           <div className="relative rounded-[2.5rem] overflow-hidden shadow-2xl border-4 border-white bg-brand-forest aspect-[4/5]">
             <img
-              src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=1200&q=85"
+              src="/images/hero.webp"
               alt="Humanitarian care and community support in Sri Lanka"
               className="w-full h-full object-cover"
               loading="eager"
+              decoding="async"
+              // @ts-ignore
+              fetchpriority="high"
+              width={1200}
+              height={1500}
             />
             <div className="absolute inset-0 bg-gradient-to-t from-brand-onyx/80 via-transparent to-transparent" />
             

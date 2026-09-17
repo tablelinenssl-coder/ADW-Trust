@@ -113,9 +113,13 @@ export const Initiatives: React.FC = () => {
               <div className="lg:col-span-6 space-y-3">
                 <div className="relative rounded-2xl overflow-hidden aspect-[16/10] bg-brand-forest border border-brand-border shadow-sm">
                   <img
-                    src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=1000&q=80"
+                    src="/images/cataract.webp"
                     alt="Vision Clarity Simulation"
                     className="w-full h-full object-cover transition-all duration-200"
+                    loading="lazy"
+                    decoding="async"
+                    width={900}
+                    height={562}
                     style={{
                       filter: `blur(${(100 - sliderPos) * 0.1}px) brightness(${0.7 + (sliderPos / 100) * 0.3})`,
                     }}
@@ -222,10 +226,13 @@ export const Initiatives: React.FC = () => {
 
               <div className="lg:col-span-6 rounded-2xl overflow-hidden aspect-[16/10] bg-brand-forest border border-brand-border shadow-sm relative">
                 <img
-                  src="https://images.unsplash.com/photo-1538300342682-cf57afb97285?auto=format&fit=crop&w=1000&q=80"
+                  src="/images/water.webp"
                   alt="Children drinking clean water"
                   className="w-full h-full object-cover"
                   loading="lazy"
+                  decoding="async"
+                  width={900}
+                  height={562}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                 <div className="absolute bottom-4 left-4 right-4 text-white">
@@ -287,10 +294,13 @@ export const Initiatives: React.FC = () => {
 
               <div className="lg:col-span-6 rounded-2xl overflow-hidden aspect-[16/10] bg-brand-forest border border-brand-border shadow-sm relative">
                 <img
-                  src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&w=1000&q=80"
+                  src="/images/schools.webp"
                   alt="Rural classroom education"
                   className="w-full h-full object-cover"
                   loading="lazy"
+                  decoding="async"
+                  width={900}
+                  height={562}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                 <div className="absolute bottom-4 left-4 right-4 text-white">
@@ -362,10 +372,13 @@ export const Initiatives: React.FC = () => {
 
               <div className="lg:col-span-6 rounded-2xl overflow-hidden aspect-[16/10] bg-brand-forest border border-brand-border shadow-sm relative">
                 <img
-                  src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=1000&q=80"
+                  src="/images/environment.webp"
                   alt="Community tree planting in Sri Lanka"
                   className="w-full h-full object-cover"
                   loading="lazy"
+                  decoding="async"
+                  width={900}
+                  height={562}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                 <div className="absolute bottom-4 left-4 right-4 text-white">

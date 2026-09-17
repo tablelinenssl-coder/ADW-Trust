@@ -11,10 +11,13 @@ export const About: React.FC = () => {
         <div className="lg:col-span-5 space-y-6">
           <div className="rounded-[2.5rem] overflow-hidden shadow-xl border-4 border-white bg-brand-forest aspect-[4/5] relative">
             <img
-              src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?auto=format&fit=crop&w=1000&q=80"
+              src="/images/about.webp"
               alt="Community solidarity and compassionate care in Sri Lanka"
               className="w-full h-full object-cover"
               loading="lazy"
+              decoding="async"
+              width={900}
+              height={1125}
             />
             <div className="absolute inset-0 bg-gradient-to-t from-brand-onyx/80 via-transparent to-transparent" />
             <div className="absolute bottom-6 left-6 right-6 text-white space-y-1">
