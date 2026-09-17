@@ -1,5 +1,5 @@
 import React from 'react';
-import { Sprout, Mail, MessageCircle, MapPin } from 'lucide-react';
+import { Sprout, Mail } from 'lucide-react';
 
 export const Footer: React.FC = () => {
   const scrollTo = (href: string) => {
@@ -37,16 +37,14 @@ export const Footer: React.FC = () => {
             <button onClick={() => scrollTo('#contact')} className="hover:text-brand-forest transition-colors">Contact</button>
           </div>
 
-          {/* Direct WhatsApp CTA */}
+          {/* Direct Email CTA */}
           <div className="flex items-center gap-2">
             <a
-              href="https://wa.me/4915201080100"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="mailto:doreen.wissmann@gmail.com"
               className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-canvas hover:bg-brand-sand border border-brand-border text-xs font-bold text-brand-charcoal transition-colors"
             >
-              <MessageCircle className="w-3.5 h-3.5 text-[#25D366] fill-current" />
-              <span>+49 1520 1080100</span>
+              <Mail className="w-3.5 h-3.5 text-brand-emerald" />
+              <span>doreen.wissmann@gmail.com</span>
             </a>
           </div>
 

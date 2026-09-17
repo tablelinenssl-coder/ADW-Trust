@@ -88,7 +88,6 @@ ADW Trust is dedicated to providing direct, verified humanitarian relief across 
 ## 📞 Direct Contact Channels
 
 - **Founder:** Madam Doreen Wissmann
-- **Direct WhatsApp:** [+49 1520 1080100](https://wa.me/4915201080100)
 - **Personal Email:** [doreen.wissmann@gmail.com](mailto:doreen.wissmann@gmail.com)
 - **Operational Hubs:** Colombo, Sri Lanka & Hanover, Germany
 

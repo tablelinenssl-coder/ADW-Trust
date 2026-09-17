@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { MapPin, Mail, MessageCircle, Send, CheckCircle2, Clock } from 'lucide-react';
+import { MapPin, Mail, Send, CheckCircle2, Clock } from 'lucide-react';
 
 export const Contact: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -60,7 +60,7 @@ export const Contact: React.FC = () => {
             Connect with Madam Doreen Wissmann
           </h2>
           <p className="text-xs sm:text-sm text-brand-muted font-light">
-            Reach out directly via WhatsApp or Email to discuss our initiatives or explore donor partnerships.
+            Reach out directly via Email or send a message below to discuss our initiatives or explore partnerships.
           </p>
         </div>
 
@@ -68,23 +68,6 @@ export const Contact: React.FC = () => {
           
           <div className="lg:col-span-5 space-y-4">
             
-            {/* WhatsApp */}
-            <a
-              href="https://wa.me/4915201080100"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-5 rounded-2xl bg-white border border-brand-border hover:border-[#25D366]/50 shadow-sm hover:shadow-md transition-all flex items-center gap-4 group block"
-            >
-              <div className="w-12 h-12 rounded-xl bg-[#25D366]/10 text-[#25D366] flex items-center justify-center shrink-0">
-                <MessageCircle className="w-6 h-6 fill-current" />
-              </div>
-              <div>
-                <div className="text-[10px] font-bold uppercase tracking-wider text-brand-forest">WhatsApp Direct</div>
-                <div className="text-base font-bold text-brand-charcoal group-hover:text-brand-emerald transition-colors">+49 1520 1080100</div>
-                <div className="text-[11px] text-brand-muted">Click to open chat instantly</div>
-              </div>
-            </a>
-
             {/* Email */}
             <a
               href="mailto:doreen.wissmann@gmail.com"
