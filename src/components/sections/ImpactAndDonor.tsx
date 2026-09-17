@@ -59,16 +59,16 @@ export const ImpactAndDonor: React.FC = () => {
   };
 
   return (
-    <section id="impact" className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto" aria-label="Our Impact & Transparency">
+    <section id="impact" className="py-12 sm:py-20 lg:py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto" aria-label="Our Impact & Transparency">
       
-      <div className="space-y-16">
+      <div className="space-y-10 sm:space-y-16">
         
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto space-y-2">
           <span className="text-xs font-bold uppercase tracking-wider text-brand-emerald">
             Trust &amp; Direct Accountability
           </span>
-          <h2 className="text-3xl sm:text-4xl font-serif font-bold text-brand-charcoal tracking-tight">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-serif font-bold text-brand-charcoal tracking-tight">
             How ADW Trust Delivers Lasting Change
           </h2>
           <p className="text-xs sm:text-sm text-brand-muted font-light">
@@ -77,23 +77,23 @@ export const ImpactAndDonor: React.FC = () => {
         </div>
 
         {/* Step-by-Step Transparency Lifecycle */}
-        <div className="p-6 sm:p-10 rounded-3xl bg-white border border-brand-border shadow-sm space-y-6">
+        <div className="p-4 sm:p-8 lg:p-10 rounded-2xl sm:rounded-3xl bg-white border border-brand-border shadow-sm space-y-4 sm:space-y-6">
           <div>
             <span className="text-xs font-bold uppercase tracking-wider text-brand-forest">
               Direct Supply Lifecycle
             </span>
-            <h3 className="text-xl sm:text-2xl font-serif font-bold text-brand-charcoal mt-0.5">
+            <h3 className="text-lg sm:text-xl md:text-2xl font-serif font-bold text-brand-charcoal mt-0.5">
               From Need Identification to Community Transformation
             </h3>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
             {transparencySteps.map((s, idx) => (
-              <div key={idx} className="p-5 rounded-2xl bg-brand-canvas border border-brand-border space-y-2 relative">
-                <div className="text-2xl font-serif font-extrabold text-brand-emerald">
+              <div key={idx} className="p-4 sm:p-5 rounded-xl sm:rounded-2xl bg-brand-canvas border border-brand-border space-y-1.5 sm:space-y-2 relative">
+                <div className="text-xl sm:text-2xl font-serif font-extrabold text-brand-emerald">
                   {s.step}
                 </div>
-                <h4 className="text-sm font-bold text-brand-charcoal">
+                <h4 className="text-xs sm:text-sm font-bold text-brand-charcoal">
                   {s.title}
                 </h4>
                 <p className="text-xs text-brand-muted leading-relaxed font-light">
@@ -110,29 +110,29 @@ export const ImpactAndDonor: React.FC = () => {
             <span className="text-xs font-bold uppercase tracking-wider text-brand-emerald">
               Our Core Focus Areas
             </span>
-            <h3 className="text-2xl font-serif font-bold text-brand-charcoal mt-0.5">
+            <h3 className="text-xl sm:text-2xl font-serif font-bold text-brand-charcoal mt-0.5">
               Key Community Interventions
             </h3>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
             {focusAreas.map((item, idx) => {
               const Icon = item.icon;
               return (
                 <div
                   key={idx}
-                  className="p-6 rounded-3xl bg-white border border-brand-border hover:border-brand-emerald hover:shadow-lg transition-all duration-300 flex flex-col justify-between"
+                  className="p-5 sm:p-6 rounded-2xl sm:rounded-3xl bg-white border border-brand-border hover:border-brand-emerald hover:shadow-lg transition-all duration-300 flex flex-col justify-between"
                 >
                   <div className="space-y-3">
-                    <div className="w-12 h-12 rounded-2xl bg-brand-sage text-brand-forest flex items-center justify-center">
-                      <Icon className="w-6 h-6" />
+                    <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl sm:rounded-2xl bg-brand-sage text-brand-forest flex items-center justify-center">
+                      <Icon className="w-5 h-5 sm:w-6 sm:h-6" />
                     </div>
 
                     <div className="space-y-0.5">
                       <div className="text-[10px] font-bold uppercase tracking-wider text-brand-emerald">
                         {item.sub}
                       </div>
-                      <h4 className="text-base font-serif font-bold text-brand-charcoal">
+                      <h4 className="text-sm sm:text-base font-serif font-bold text-brand-charcoal">
                         {item.title}
                       </h4>
                     </div>

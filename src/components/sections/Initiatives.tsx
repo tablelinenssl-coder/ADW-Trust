@@ -19,14 +19,14 @@ export const Initiatives: React.FC = () => {
   };
 
   return (
-    <section id="initiatives" className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto" aria-label="Our Core Initiatives">
+    <section id="initiatives" className="py-12 sm:py-20 lg:py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto" aria-label="Our Core Initiatives">
       
       {/* Header */}
-      <div className="text-center max-w-2xl mx-auto space-y-2 mb-10">
+      <div className="text-center max-w-2xl mx-auto space-y-2 mb-8 sm:mb-10">
         <span className="text-xs font-bold uppercase tracking-wider text-brand-emerald">
           Four Pillars of Relief
         </span>
-        <h2 className="text-3xl sm:text-4xl font-serif font-bold text-brand-charcoal tracking-tight">
+        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-serif font-bold text-brand-charcoal tracking-tight">
           Our Core Humanitarian Initiatives
         </h2>
         <p className="text-xs sm:text-sm text-brand-muted font-light">
@@ -35,7 +35,7 @@ export const Initiatives: React.FC = () => {
       </div>
 
       {/* Tabs */}
-      <div className="flex flex-wrap items-center justify-center gap-2 mb-8">
+      <div className="flex flex-wrap items-center justify-center gap-1.5 sm:gap-2 mb-6 sm:mb-8">
         {tabs.map((tab) => {
           const Icon = tab.icon;
           const isSel = activeTab === tab.id;
@@ -43,13 +43,13 @@ export const Initiatives: React.FC = () => {
             <button
               key={tab.id}
               onClick={() => setActiveTab(tab.id)}
-              className={`flex items-center gap-2 px-5 py-2.5 rounded-full text-xs sm:text-sm font-bold transition-all ${
+              className={`flex items-center gap-1.5 sm:gap-2 px-3.5 sm:px-5 py-2 sm:py-2.5 rounded-full text-xs sm:text-sm font-bold transition-all min-h-[40px] ${
                 isSel
                   ? 'bg-brand-forest text-white shadow-md'
                   : 'bg-white border border-brand-border text-brand-text hover:border-brand-emerald hover:bg-brand-sand/40'
               }`}
             >
-              <Icon className={`w-4 h-4 ${isSel ? 'text-brand-gold-pure' : 'text-brand-emerald'}`} />
+              <Icon className={`w-3.5 h-3.5 sm:w-4 sm:h-4 ${isSel ? 'text-brand-gold-pure' : 'text-brand-emerald'}`} />
               <span>{tab.label}</span>
             </button>
           );
@@ -57,7 +57,7 @@ export const Initiatives: React.FC = () => {
       </div>
 
       {/* Main Tab Box */}
-      <div className="p-6 sm:p-10 rounded-3xl bg-white border border-brand-border shadow-lg">
+      <div className="p-4 sm:p-8 lg:p-10 rounded-2xl sm:rounded-3xl bg-white border border-brand-border shadow-lg">
         <AnimatePresence mode="wait">
           
           {/* 1. CATARACT SURGERY SUPPORT */}
