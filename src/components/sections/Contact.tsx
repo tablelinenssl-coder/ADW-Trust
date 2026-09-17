@@ -37,15 +37,46 @@ export const Contact: React.FC = () => {
     return Object.keys(err).length === 0;
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!validate()) return;
     setLoading(true);
-    setTimeout(() => {
-      setLoading(false);
+
+    try {
+      const response = await fetch('https://formsubmit.co/ajax/doreen.wissmann@gmail.com', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json',
+        },
+        body: JSON.stringify({
+          Name: formData.name,
+          Email: formData.email,
+          Message: formData.message,
+          _subject: `New Inquiry from ${formData.name} (ADW Trust Website)`,
+          _replyto: formData.email,
+          _template: 'table',
+          _captcha: 'false',
+        }),
+      });
+
+      if (response.ok) {
+        setSubmitted(true);
+        setFormData({ name: '', email: '', message: '' });
+      } else {
+        window.location.href = `mailto:doreen.wissmann@gmail.com?subject=${encodeURIComponent(
+          `Inquiry from ${formData.name}`
+        )}&body=${encodeURIComponent(`${formData.message}\n\nSender Email: ${formData.email}`)}`;
+        setSubmitted(true);
+      }
+    } catch {
+      window.location.href = `mailto:doreen.wissmann@gmail.com?subject=${encodeURIComponent(
+        `Inquiry from ${formData.name}`
+      )}&body=${encodeURIComponent(`${formData.message}\n\nSender Email: ${formData.email}`)}`;
       setSubmitted(true);
-      setFormData({ name: '', email: '', message: '' });
-    }, 600);
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
