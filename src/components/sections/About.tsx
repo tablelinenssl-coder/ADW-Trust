@@ -31,20 +31,13 @@ export const About: React.FC = () => {
           </div>
 
           {/* Founder Signature Card */}
-          <div className="p-5 rounded-3xl bg-white border border-brand-border shadow-sm flex items-center justify-between">
-            <div className="flex items-center gap-3.5">
-              <div className="w-11 h-11 rounded-full bg-brand-sage border-2 border-brand-emerald flex items-center justify-center shrink-0">
-                <User className="w-5 h-5 text-brand-emerald" />
-              </div>
-              <div>
-                <h4 className="text-sm font-serif font-bold text-brand-charcoal">Madam Doreen Wissmann</h4>
-                <p className="text-xs text-brand-emerald font-semibold">Founder &amp; Visionary, ADW Trust</p>
-              </div>
+          <div className="p-5 rounded-3xl bg-white border border-brand-border shadow-sm flex items-center gap-3.5">
+            <div className="w-11 h-11 rounded-full bg-brand-sage border-2 border-brand-emerald flex items-center justify-center shrink-0">
+              <User className="w-5 h-5 text-brand-emerald" />
             </div>
-            <div className="text-right">
-              <span className="text-[10px] uppercase tracking-wider font-bold text-brand-forest bg-brand-sage px-2.5 py-1 rounded-full">
-                Personal Leadership
-              </span>
+            <div>
+              <h4 className="text-sm font-serif font-bold text-brand-charcoal">Madam Doreen Wissmann</h4>
+              <p className="text-xs text-brand-emerald font-semibold">Founder &amp; Visionary, ADW Trust</p>
             </div>
           </div>
         </div>
