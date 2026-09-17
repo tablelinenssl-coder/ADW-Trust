@@ -1,6 +1,5 @@
 import React from 'react';
-import { motion } from 'framer-motion';
-import { Mail, ArrowRight, Eye, ShieldCheck, CheckCircle2, Hospital } from 'lucide-react';
+import { Mail, ArrowRight, Hospital } from 'lucide-react';
 
 export const Hero: React.FC = () => {
   const scrollTo = (href: string) => {
@@ -16,12 +15,6 @@ export const Hero: React.FC = () => {
         {/* Left Column: Bold Typography & Contact Action */}
         <div className="lg:col-span-7 space-y-6">
           
-          {/* Main Tagline */}
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-brand-sage border border-brand-emerald/20 text-xs font-extrabold uppercase tracking-wider text-brand-forest">
-            <Eye className="w-3.5 h-3.5 text-brand-emerald" />
-            <span>&ldquo;Light the Vision with Our Kindness&rdquo;</span>
-          </div>
-
           {/* High-Impact Headline */}
           <h1 className="text-4xl sm:text-6xl md:text-7xl font-serif font-bold text-brand-charcoal tracking-tight leading-[1.06]">
             Creating Change.<br />
